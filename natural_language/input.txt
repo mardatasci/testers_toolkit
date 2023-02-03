@@ -1,0 +1,8 @@
+These cases support practitioners of systems engineering and are also used in the
+academic instruction in systems engineering within military service academies and at both
+civilian and military graduate schools. Each of the case studies comprises elements of success as
+well as examples of systems engineering decisions that, in hindsight, were not optimal. Both
+types of examples are useful for learning. Plans exist for future case studies focusing on various
+space systems, additional aircraft programs, munitions programs, joint service programs,
+logistics-led programs, science and technology/laboratory efforts, and a variety of commercial
+systems.
