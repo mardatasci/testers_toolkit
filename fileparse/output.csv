@@ -1,0 +1,11 @@
+Field,Count
+.main,2
+...locate_configFile,1
+..settcpimage,2
+..reg_process,3
+...read_physical_netif,8
+....mailslot_create,1
+...mailbox_register,1
+.....mailslot_create,16
+....mailbox_register,12
+..entity_initialize,6
