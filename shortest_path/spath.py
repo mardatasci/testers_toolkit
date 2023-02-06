@@ -14,19 +14,25 @@ def calculate_paths(edges, vertices, start, end):
                 if (vertex, neighbor) in edges and neighbor not in path:
                     paths.append(path + [neighbor])
 
+
+
 def main(argv):
-    input_file = 'graph.csv'
+    #input_file = 'graph.csv'
     output_file = None
 
     try:
         opts, args = getopt.getopt(argv, "hi:o:", ["ifile=", "ofile="])
     except getopt.GetoptError:
-        print('shortest_path.py -i <inputfile> -o <outputfile> start end')
+        print('spath.py -i <inputfile> -o <outputfile> <start> <end>')
+        print('OR')
+        print('spath.py -i <inputfile> <start> <end>')
         sys.exit(2)
 
     for opt, arg in opts:
         if opt == '-h':
-            print('shortest_path.py -i <inputfile> -o <outputfile> start end')
+            print('spath.py -i <inputfile> -o <outputfile> <start> <end>')
+            print('OR')
+            print('spath.py -i <inputfile> <start> <end>')
             sys.exit()
         elif opt in ("-i", "--ifile"):
             input_file = arg
@@ -34,7 +40,9 @@ def main(argv):
             output_file = arg
 
     if len(args) != 2:
-        print('shortest_path.py -i <inputfile> -o <outputfile> start end')
+        print('spath.py -i <inputfile> -o <outputfile> <start> <end>')
+        print('OR')
+        print('spath.py -i <inputfile> <start> <end>')
         sys.exit(2)
     start, end = map(int, args[0:2])
 
@@ -46,6 +54,7 @@ def main(argv):
     if output_file is None:
         for path in calculate_paths(edges, vertices, start, end):
             print(', '.join(map(str, path)))
+
     else:
         with open(output_file, 'w', newline='') as f:
             writer = csv.writer(f)
@@ -54,3 +63,4 @@ def main(argv):
 
 if __name__ == "__main__":
     main(sys.argv[1:])
+    
