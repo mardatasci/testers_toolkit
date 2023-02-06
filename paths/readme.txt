@@ -1,3 +1,5 @@
+Breadth-first search (BFS) Algorithm is used
+
 Usage:
 - CSV file contains the edges between vertices.
 
