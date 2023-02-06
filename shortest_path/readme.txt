@@ -30,7 +30,7 @@ inputfile:
 8,12
 11,12
 
-> python paths.py -i graph.csv 1 12
+> python spath.py -i graph.csv 1 12
 
 1, 6, 7, 8, 12
 1, 2, 3, 9, 8, 12
