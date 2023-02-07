@@ -1,6 +1,6 @@
-Breadth-first search (BFS) Algorithm is used
+# Breadth-first search (BFS) Algorithm is used
 
-UASGE:
+USAGE:
 
 spath.py -i <inputfile> -o <outputfile> <start> <end>
 
