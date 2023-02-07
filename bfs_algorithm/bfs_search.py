@@ -24,16 +24,16 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv, "hi:o:", ["ifile=", "ofile="])
     except getopt.GetoptError:
-        print('spath.py -i <inputfile> -o <outputfile> <start> <end>')
+        print('bfs_search.py -i <inputfile> -o <outputfile> <start> <end>')
         print('OR')
-        print('spath.py -i <inputfile> <start> <end>')
+        print('bfs_search.py -i <inputfile> <start> <end>')
         sys.exit(2)
 
     for opt, arg in opts:
         if opt == '-h':
-            print('spath.py -i <inputfile> -o <outputfile> <start> <end>')
+            print('bfs_search.py -i <inputfile> -o <outputfile> <start> <end>')
             print('OR')
-            print('spath.py -i <inputfile> <start> <end>')
+            print('bfs_search.py -i <inputfile> <start> <end>')
             sys.exit()
         elif opt in ("-i", "--ifile"):
             input_file = arg
@@ -41,9 +41,9 @@ def main(argv):
             output_file = arg
 
     if len(args) != 2:
-        print('spath.py -i <inputfile> -o <outputfile> <start> <end>')
+        print('bfs_search.py -i <inputfile> -o <outputfile> <start> <end>')
         print('OR')
-        print('spath.py -i <inputfile> <start> <end>')
+        print('bfs_search.py -i <inputfile> <start> <end>')
         sys.exit(2)
     start, end = map(int, args[0:2])
 
