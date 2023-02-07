@@ -1,4 +1,4 @@
-Calculates the McCabe's basis path, which is a measure of the minimum number of independent paths through the code.
+Calculates the McCabe's basis path, which is a measure of the minimum number of independent paths.
 It also calculates all possible paths in the control flow graph.
 
 Usage:
