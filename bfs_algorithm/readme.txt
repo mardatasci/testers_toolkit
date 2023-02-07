@@ -1,4 +1,4 @@
-# Breadth-first search (BFS) Algorithm is used
+Breadth-first search (BFS) Algorithm is used
 
 USAGE:
 
