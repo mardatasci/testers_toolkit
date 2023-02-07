@@ -5,7 +5,7 @@ import getopt
 def calculate_paths(edges, vertices, start, end):
     paths = [[start]]
     while paths:
-        path = paths.pop(0)
+        path = paths.pop()
         vertex = path[-1]
         if vertex == end:
             yield path
@@ -13,6 +13,7 @@ def calculate_paths(edges, vertices, start, end):
             for neighbor in vertices:
                 if (vertex, neighbor) in edges and neighbor not in path:
                     paths.append(path + [neighbor])
+
 
 
 
